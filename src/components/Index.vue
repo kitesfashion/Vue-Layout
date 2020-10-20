@@ -1,16 +1,19 @@
 <template>
   <div >
+    <Slider></Slider>
     <br>
-    <br>
-          <h1>I am Body</h1>
+    <Trip></Trip>
   </div>
 </template>
 
 <script>
+import Slider from '@/components/Slider/Slider'
+import Trip from '@/components/Trip/Trip'
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
+  name: 'Index',
+   components: {
+     Slider,
+     Trip
   }
 }
 </script>

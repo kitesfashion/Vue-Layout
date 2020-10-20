@@ -1,12 +1,3 @@
-// import Vue from 'vue'
-// import App from './App.vue'
-
-// Vue.config.productionTip = false
-
-// new Vue({
-//   render: h => h(App),
-// }).$mount('#app')
-
 
 import Vue from 'vue'
 import App from './App.vue'
@@ -14,15 +5,14 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import {routes} from './Router/index'
 import VueRouter from "vue-router"
-import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+import 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
-
-Vue.use(BootstrapVue)
+// Vue.use(BootstrapVue)
 Vue.use(VueRouter)
-Vue.use(IconsPlugin)
+
 Vue.config.productionTip = false
 Vue.use(VueAxios, axios)
 const router = new VueRouter({
